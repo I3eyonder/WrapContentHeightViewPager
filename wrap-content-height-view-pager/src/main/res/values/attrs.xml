@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WrapContentHeightViewPager">
+        <attr name="measureMode" format="enum">
+            <enum name="atMost" value="0" />
+            <enum name="fitChildren" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

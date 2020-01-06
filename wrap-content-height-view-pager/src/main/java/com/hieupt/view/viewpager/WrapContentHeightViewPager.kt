@@ -19,7 +19,10 @@ class WrapContentHeightViewPager : ViewPager {
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         var newHeightMeasureSpec = heightMeasureSpec
         currentView?.let { currentView ->
-            currentView.measure(widthMeasureSpec, heightMeasureSpec)
+            currentView.measure(
+                widthMeasureSpec,
+                MeasureSpec.makeMeasureSpec(heightMeasureSpec, MeasureSpec.AT_MOST)
+            )
             val height = max(currentView.measuredHeight, minimumHeight)
             val newHeight = MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY)
             newHeightMeasureSpec = newHeight

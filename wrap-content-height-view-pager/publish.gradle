@@ -5,7 +5,7 @@ def bintrayUserEnvKey = 'BINTRAY_USER'
 def bintrayApiEnvKey = 'BINTRAY_KEY'
 
 def groupName = 'com.dev.hieupt'
-def versionName = '1.0'
+def versionName = '1.1'
 def pkgRepoName = 'utilities'
 def pkgName = 'wrap-content-height-view-pager'
 def pkgDesc = 'Wrap Content Height View Pager'
